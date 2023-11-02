@@ -6,7 +6,6 @@ body, h1, h2, p {
 
 /* Set a futuristic background image with reduced opacity */
 body {
-  background-image: url('https://www.custom-wallpaper-printing.co.uk/custom/catalog/map/Vintage-World-Map-604492361-H-proof.jpg');
   background-size: cover;
   color: #333;
   font-family: Arial, sans-serif;
@@ -15,6 +14,7 @@ body {
   padding: 0;
   background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
+  height: 100vh;
 }
 
 /* Style the header */
@@ -98,6 +98,7 @@ h2, a {
 /* make the background image more opaque */
 .demo-wrap {
   position: relative;
+  height: 100%;
 }
 
 .demo-wrap::before {
@@ -108,8 +109,8 @@ h2, a {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
-  background-image: url('https://www.custom-wallpaper-printing.co.uk/custom/catalog/map/Vintage-World-Map-604492361-H-proof.jpg');
+  opacity: 0.40;
+  background-image: url('../images/world-background.jpeg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -117,4 +118,20 @@ h2, a {
 
 .demo-content {
   position: relative;
+  height:100%;
+  overflow-y: scroll;
+  padding-top:200px;
+}
+
+.demo-wrap footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
 }
