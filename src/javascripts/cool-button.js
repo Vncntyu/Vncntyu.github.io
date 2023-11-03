@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header');
   const nameButton = document.createElement('button');
-  nameButton.textContent = 'Click Me';
+  nameButton.textContent = 'The Cool Button';
 
   nameButton.addEventListener('click', () => {
     // Generate a random color
