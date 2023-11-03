@@ -54,7 +54,8 @@ nav a:hover {
 }
 
 /* Style sections */
-section {
+
+/* section {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   margin: 20px;
@@ -62,6 +63,7 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: #fff;
 }
+*/
 
 /* Style the footer */
 footer {
@@ -136,3 +138,19 @@ h2, a {
   z-index: 99999;
 }
 
+/* for the Javascript made button */
+button {
+  background-color: #fff; /* Background color */
+  color: rgb(255, 0, 195); /* Text color */
+  border: 1px none rgb(255, 0, 195); /* Border style */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
+}
+
+button:hover {
+  background-color:  #00ff3c; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
