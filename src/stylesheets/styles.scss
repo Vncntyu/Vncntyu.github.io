@@ -22,7 +22,7 @@ header {
   background-color: rgb(255, 0, 195);
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 header h1 {
@@ -138,19 +138,22 @@ h2, a {
   z-index: 99999;
 }
 
+
 /* for the Javascript made button */
+
 button {
-  background-color: #fff; /* Background color */
-  color: rgb(255, 0, 195); /* Text color */
-  border: 1px none rgb(255, 0, 195); /* Border style */
-  padding: 10px 20px; /* Padding inside the button */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Text size */
-  cursor: pointer; /* Cursor style on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
+  background-color: rgb(255, 0, 195);
+  color: #fff;
+  border: 1px dotted #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-  background-color:  #00ff3c; /* Background color on hover */
-  color: #fff; /* Text color on hover */
+  background-color:  #00ff3c;
+  color: #fff;
 }
+
