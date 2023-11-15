@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(){var t=document.querySelector("header"),e=document.createElement("button");e.textContent="Click Me",e.addEventListener("click",(function(){var e="#".concat(Math.floor(16777215*Math.random()).toString(16));t.style.backgroundColor=e})),t.appendChild(e)}));
