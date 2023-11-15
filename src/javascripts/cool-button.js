@@ -42,6 +42,3 @@ export function changeColors() {
   button.style.color = randomColor;
   button.style.backgroundColor = contrastColor;
 }
-
-// Add event listener to the button with arrow function
-document.getElementById('colorChangeButton').addEventListener('click', () => changeColors());

@@ -1,5 +1,8 @@
 /* Reset some default styles */
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
@@ -16,13 +19,15 @@ body, h1, h2, p {
 /* Set a futuristic background image with reduced opacity */
 body {
   background-size: cover;
-  color:  rgb(255, 0, 195);
+  color: rgb(255, 0, 195);
   font-family: Aclonica, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
+  background-color: rgba(255, 255, 255, 0.9);
+
+  /* Background color with opacity */
   height: 100vh;
 }
 
@@ -56,10 +61,14 @@ nav a {
   color: rgb(255, 0, 195);
   font-weight: bold;
   transition: color 0.3s;
+  z-index: 9999;
 }
 
 nav a:hover {
-  color: #00ff3c; /* Dark text on hover for contrast */
+  color: #00ff3c;
+  cursor: pointer !important;
+
+  /* Dark text on hover for contrast */
 }
 
 /* Style sections */
@@ -83,8 +92,15 @@ footer {
 }
 
 /* Style headings and links */
-h2, a {
-  color:  rgb(255, 0, 195);
+h2,
+a {
+  color: rgb(255, 0, 195);
+}
+
+h1>a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Style portfolio items */
@@ -125,13 +141,14 @@ h2, a {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+  pointer-events: none;
 }
 
 .demo-content {
   position: relative;
-  height:100%;
+  height: 100%;
   overflow-y: scroll;
-  padding-top:200px;
+  padding-top: 200px;
 }
 
 .demo-wrap footer {
@@ -162,6 +179,6 @@ button {
 }
 
 button:hover {
-  background-color:  #00ff3c;
+  background-color: #00ff3c;
   color: #fff;
 }
