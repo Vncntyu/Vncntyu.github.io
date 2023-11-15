@@ -1,1 +1,3 @@
-console.log('Hello from index.js!');
+import { changeColors } from './cool-button';
+
+document.getElementById('colorChangeButton').addEventListener('click', () => changeColors());

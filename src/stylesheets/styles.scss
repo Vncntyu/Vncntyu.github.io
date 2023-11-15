@@ -4,11 +4,20 @@ body, h1, h2, p {
   padding: 0;
 }
 
+@font-face {
+  font-family: Aclonica;
+  src: url("../fonts/Aclonica-Regular.woff2") format("woff2"),
+    url("../fonts/Aclonica-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Set a futuristic background image with reduced opacity */
 body {
   background-size: cover;
   color:  rgb(255, 0, 195);
-  font-family: Arial, sans-serif;
+  font-family: Aclonica, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -156,4 +165,3 @@ button:hover {
   background-color:  #00ff3c;
   color: #fff;
 }
-

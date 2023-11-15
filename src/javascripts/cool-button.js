@@ -9,7 +9,7 @@ function getRandomColor() {
 }
 
 // Function to calculate the contrast color
-function getContrastColor(hex) {
+export function getContrastColor(hex) {
   // Create a new variable instead of reassigning the parameter
   let hexcolor = hex.slice(0, 1) === '#' ? hex.slice(1) : hex;
 
@@ -29,7 +29,7 @@ function getContrastColor(hex) {
 }
 
 // Main function to change the colors
-function changeColors() {
+export function changeColors() {
   const randomColor = getRandomColor();
   const contrastColor = getContrastColor(randomColor);
 
