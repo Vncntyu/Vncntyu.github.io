@@ -1,12 +1,3 @@
-/* Reset some default styles */
-body,
-h1,
-h2,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 @font-face {
   font-family: Aclonica;
   src: url("../fonts/Aclonica-Regular.woff2") format("woff2"),
@@ -16,28 +7,34 @@ p {
   font-display: swap;
 }
 
-/* Set a futuristic background image with reduced opacity */
 body {
   background-size: cover;
-  color: rgb(255, 0, 195);
+  color: rgb(167, 73, 22);
   font-family: Aclonica, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0.9);
-
-  /* Background color with opacity */
   height: 100vh;
 }
 
-/* Style the header */
 header {
-  background-color: rgb(255, 0, 195);
+  background-color: rgba(134, 24, 24, 0.571);
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px;
 }
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 
 header h1 {
   font-size: 36px;
@@ -58,52 +55,83 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: rgb(255, 0, 195);
+  color: rgb(167, 73, 22);
   font-weight: bold;
   transition: color 0.3s;
   z-index: 9999;
 }
 
 nav a:hover {
-  color: #00ff3c;
+  color: rgb(255, 0, 187);
   cursor: pointer !important;
-
-  /* Dark text on hover for contrast */
 }
 
-/* Style sections */
-
-/* section {
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: #fff;
+/* Specific styles for the landing page */
+body.landing-page {
+  background-size: cover;
+  color: rgb(255, 0, 195);
+  font-family: Aclonica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-*/
 
-/* Style the footer */
-footer {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px 0;
+.page-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 210px;
+}
+
+.page-links a {
+  text-decoration: none;
+  color: rgb(167, 73, 22);
+  font-weight: normal;
+  margin: 0 100px;
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+.page-links a:hover {
+  color: rgb(255, 0, 195);
 }
 
 /* Style headings and links */
 h2,
 a {
-  color: rgb(255, 0, 195);
+  color: rgb(167, 73, 22);
 }
 
+/* Styles "Vincent Yu" if I were to make it a link */
 h1>a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* Style portfolio items */
+
+section {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.208);
+  margin: 20px;
+  border-radius: 5px;
+  color: rgb(167, 73, 22);
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(134, 24, 24, 0.571);
+  color: #fff;
+  padding: 10px 0;
+}
+
 .portfolio-item {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -136,7 +164,7 @@ h1>a {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.30;
+  opacity: 0.20;
   background-image: url('../images/world-background.jpeg');
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -164,13 +192,11 @@ h1>a {
   z-index: 99999;
 }
 
-
 /* for the Javascript made button */
-
 button {
-  background-color: rgb(255, 0, 195);
+  background-color: rgb(0, 0, 0);
   color: #fff;
-  border: 1px dotted #fff;
+  border: 1px none #fff;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 12px;
@@ -179,6 +205,25 @@ button {
 }
 
 button:hover {
-  background-color: #00ff3c;
+  background-color: rgb(255, 0, 187);
   color: #fff;
+}
+
+/* Add the following styles for logo alignment for Stats Page */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-buttons a {
+  margin: 0 100px;
+
+  /* Adjust the margin as needed for spacing */
+}
+
+.contact-buttons img {
+  max-width: 100px;
+
+  /* Adjust the max-width as needed */
+  height: auto;
 }
